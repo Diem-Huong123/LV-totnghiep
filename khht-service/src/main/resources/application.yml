@@ -1,0 +1,14 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /khht
+
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://admin:123456@mongodb:27017/student_db?authSource=admin&authMechanism=SCRAM-SHA-1
+      uri: mongodb://admin:123456@localhost:27017/student_db?authSource=admin&authMechanism=SCRAM-SHA-1
+#       uri: mongodb://admin:123456@172.30.120.15:27017/student_db?authSource=admin&authMechanism=SCRAM-SHA-1
+
+course-service:
+  url: http://localhost:8000/course/api

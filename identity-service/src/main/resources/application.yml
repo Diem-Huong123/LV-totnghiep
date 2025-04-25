@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://admin:123456@172.30.120.15:27017/student_db?authSource=admin&authMechanism=SCRAM-SHA-1
+      uri: mongodb://admin:123456@localhost:27017/student_db?authSource=admin&authMechanism=SCRAM-SHA-1
+#      uri: mongodb://admin:123456@mongodb:27017/student_db?authSourcdocker run -p 3000:80 frontende=admin&authMechanism=SCRAM-SHA-1
